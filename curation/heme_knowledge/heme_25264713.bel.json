@@ -1,0 +1,1112 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {
+    "pybel_version": "0.13.2",
+    "document_metadata": {
+      "copyright": "Copyright © 2018 Fraunhofer Institute SCAI, All rights reserved.",
+      "licenses": "Private Ownership to Fraunhofer Institute SCAI",
+      "contact": "farah.humayun@scai-extern.fraunhofer.de",
+      "name": "heme_25264713.bel",
+      "version": "1.0.0",
+      "authors": "Farah Humayun",
+      "description": "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia."
+    },
+    "namespace_url": {
+      "CHEBI": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns",
+      "DRUGBANK": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns",
+      "ECCODE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns",
+      "HBP": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns",
+      "HGNC": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns",
+      "HGNCGENEFAMILY": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns",
+      "GO": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns",
+      "INTERPRO": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns",
+      "MESH": "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns",
+      "MGI": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns",
+      "MIRBASE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns",
+      "NCBIGENE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns",
+      "PFAM": "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns",
+      "RGD": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns",
+      "FPLX": "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns",
+      "CTO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns",
+      "DO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns",
+      "HP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+    },
+    "namespace_pattern": {
+      "DBSNP": "rs[0-9]+",
+      "TAXONOMY": "^\\d+$",
+      "UNIPROT": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$",
+      "PUBCHEM": "^\\d+$",
+      "HM": ".*"
+    },
+    "namespaces_uncached": [],
+    "annotation_url": {
+      "Anatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno",
+      "CellLine": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno",
+      "CellStructure": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno",
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno",
+      "Confidence": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno",
+      "Gender": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+      "MeSHAnatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno",
+      "MeSHDisease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno",
+      "Subgraph": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno",
+      "TextLocation": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+    },
+    "annotation_pattern": {
+      "Species": ".*",
+      "TimePoint": ".*",
+      "Concentration": ".*"
+    },
+    "annotation_list": {},
+    "path": "c:\\users\\syedf\\pycharmprojects\\heme\\curation\\heme_knowledge\\heme_25264713.bel"
+  },
+  "nodes": [
+    {
+      "function": "Abundance",
+      "namespace": "CHEBI",
+      "name": "carbon monoxide",
+      "id": "f9a3abc538e60a3026dee8cad1fc1437008be2a35790de8c753ee79bbbcc228bb80f6053c1170690621df714e7420bc4d4144d1883eca1753cffae3c0b1a99b4",
+      "bel": "a(CHEBI:\"carbon monoxide\")"
+    },
+    {
+      "function": "Abundance",
+      "namespace": "CHEBI",
+      "name": "hydrogen peroxide",
+      "id": "4d65b5d180890b98afe0bc10614fde44ee750b2d1af6fdd925fc31ead7ee9a7248bda3d67c52aebf220b8c048d999f2d878a97a70b0e027a7294cbd3c7bf61bf",
+      "bel": "a(CHEBI:\"hydrogen peroxide\")"
+    },
+    {
+      "function": "Abundance",
+      "namespace": "CHEBI",
+      "name": "NADPH",
+      "id": "7d33be36ec105ac5ef6c908d591a38136de196fbb548952971883c854cc836b29a1b8850d99c7ee7b62897122afc6455d59d2a039eac9f23c178f9b7d6a397e0",
+      "bel": "a(CHEBI:NADPH)"
+    },
+    {
+      "function": "Abundance",
+      "namespace": "CHEBI",
+      "name": "glucose",
+      "id": "ad228f723834a0438254651fae75410bfa5cb8ee6d9baa98af0240115b1e5ec55edb5d001429c764d8785ec034b6b90edc76a4b83d14572cae3624feacf85491",
+      "bel": "a(CHEBI:glucose)"
+    },
+    {
+      "function": "Abundance",
+      "namespace": "HM",
+      "name": "hemoglobin beta-93-cysteine",
+      "id": "ab0b66d628fcc118ac16f09c506362a0627d69d26fa286d84b8fd8d2121756f7d911bdcf0d0276c2fa2a3b8f991b6583d6f6315471b3b916b1fdcd3bdfcf485e",
+      "bel": "a(HM:\"hemoglobin beta-93-cysteine\")"
+    },
+    {
+      "function": "Abundance",
+      "namespace": "HM",
+      "name": "stored erythrocytes",
+      "id": "c5f07faa52d39663c7bfb6346590680850cdc80f5daec0a27d13d0b987d98745781c6e81ce6edb50f375981a5345c5027325348c3907f71521d30ab0b54f60c4",
+      "bel": "a(HM:\"stored erythrocytes\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "namespace": "MESH",
+      "name": "Oxidative Stress",
+      "id": "32bd3ab5e8a3a26be3209856c88741f0f0e2dff98d2587599a6a21b0f4793c5d8feb1194ea2166cf3cece076e7095530b116270e6655bc8feb35a437fda42cf6",
+      "bel": "bp(MESH:\"Oxidative Stress\")"
+    },
+    {
+      "function": "Protein",
+      "namespace": "MGI",
+      "name": "Prdx2",
+      "id": "6abf852f4d933aba9c9f0e25bff602283b9e6aa1d31a165c32cd836ebb455edefaffa21ab9b1579d25b33f02077fa13e7b55c7b839143125d1704f3b2418dc0b",
+      "bel": "p(MGI:Prdx2)"
+    },
+    {
+      "function": "Protein",
+      "namespace": "MGI",
+      "name": "Txn1",
+      "id": "d7da7536ef3ce18463ce9bcd094d13c347e3ba9f2b9825ebefb6ec97aa7e46f7c5c5cbca820b21fa44273188f30d68178abe6898f22be91391e42ce0c88d2bdf",
+      "bel": "p(MGI:Txn1)"
+    },
+    {
+      "function": "Pathology",
+      "namespace": "MESH",
+      "name": "Hemolysis",
+      "id": "7cfbd58cfcd389d302278ecd54992b3d6039896ac077344c4c47bcafd5379ca16ef441da8e1f3105595a30c4dd7331ca2a6f864432425107f7850f8dbe210b09",
+      "bel": "path(MESH:Hemolysis)"
+    }
+  ],
+  "links": [
+    {
+      "line": 102,
+      "relation": "negativeCorrelation",
+      "evidence": "Peroxiredoxin-2 (Prx-2) has emerged as the critical antioxidant protecting RBCs from H2O2 produced endogenously (by Hb autoxidation and subsequent superoxide dismutation) and exogenously (e.g., from activated neutrophils) at low (physiologic) concentrations (11, 32, 38, 40, 43, 45) and, therefore, may limit oxidative injury to other cells/tissues in the vasculature (6, 57).",
+      "citation": {
+        "type": "PubMed",
+        "name": "Antioxidants &amp; redox signaling",
+        "reference": "25264713",
+        "title": "Peroxiredoxin-2 recycling is inhibited during erythrocyte storage.",
+        "volume": "22",
+        "pages": "294-307",
+        "date": "2015-02-01",
+        "first": "Harper VM",
+        "last": "Patel RP",
+        "authors": [
+          "Barnes S",
+          "Harper VM",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R",
+          "Sun CW",
+          "Townes T",
+          "Wilson L"
+        ]
+      },
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        },
+        "Cell": {
+          "erythrocyte": true
+        }
+      },
+      "source": 7,
+      "target": 1,
+      "key": "7f9df922d86f909db3d4b1c672499e2dff3becd07b4ff5116a0e553584b2f9bf02586092a8aa5d80ed530ac636ab1f7f746255bf7691d5837eddf3c79469d8fb"
+    },
+    {
+      "line": 121,
+      "relation": "positiveCorrelation",
+      "evidence": "Figure 1B presents these data and shows that (i) basal (time 0) Prx-2 oxidation was higher at day 35 relative to day 14 and 28 ( p < 0.05 by one-way analysis of variance (ANOVA) with Tukey post hoc test); (ii) H2O2 significantly increased Prx-2 oxidation, which was maximal at the first time point (5 min) measured; (iii) the magnitude of the maximal level of Prx-2 oxidation increased with RBC storage age ( p < 0.05 by one-way ANOVA with Tukey post hoc test for day 7 vs. 35 for 5 min data); and (iv) dimeric Prx-2 was slowly reduced back to the monomer over 60 min; however, this was not observed with day 35 RBC, where Prx- 2 remained > 75% oxidized.",
+      "citation": {
+        "type": "PubMed",
+        "name": "Antioxidants &amp; redox signaling",
+        "reference": "25264713",
+        "title": "Peroxiredoxin-2 recycling is inhibited during erythrocyte storage.",
+        "volume": "22",
+        "pages": "294-307",
+        "date": "2015-02-01",
+        "first": "Harper VM",
+        "last": "Patel RP",
+        "authors": [
+          "Barnes S",
+          "Harper VM",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R",
+          "Sun CW",
+          "Townes T",
+          "Wilson L"
+        ]
+      },
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "Cell": {
+          "erythrocyte": true
+        },
+        "TimePoint": {
+          "5 min": true
+        }
+      },
+      "source": 7,
+      "target": 1,
+      "key": "5481dedce17cc43109e0afbb93e946eaab7b5c5e63f18a1f40a4584a914f53626af9a7f46f4ce1483c379df5e440e743c52bc709cd1bc75bf81aa5800a033892"
+    },
+    {
+      "line": 181,
+      "relation": "decreases",
+      "evidence": "The potential significance of this finding is underscored by the fact that Prx-2 is considered the primary antioxidant system to negate H2O2-mediated oxidative damage in the RBC (41).",
+      "citation": {
+        "type": "PubMed",
+        "name": "Antioxidants &amp; redox signaling",
+        "reference": "25264713",
+        "title": "Peroxiredoxin-2 recycling is inhibited during erythrocyte storage.",
+        "volume": "22",
+        "pages": "294-307",
+        "date": "2015-02-01",
+        "first": "Harper VM",
+        "last": "Patel RP",
+        "authors": [
+          "Barnes S",
+          "Harper VM",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R",
+          "Sun CW",
+          "Townes T",
+          "Wilson L"
+        ]
+      },
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        },
+        "Cell": {
+          "erythrocyte": true
+        },
+        "TimePoint": {
+          "5 min": true
+        }
+      },
+      "source": 7,
+      "target": 1,
+      "key": "94dc3663f76b5a825daaf764bc2d779b63eca788cfeed971faa94c7012a8719f06ab29788aed61df712d6d3d7824aea28114f8b765455646e52e122133e94185"
+    },
+    {
+      "line": 103,
+      "relation": "negativeCorrelation",
+      "evidence": "Peroxiredoxin-2 (Prx-2) has emerged as the critical antioxidant protecting RBCs from H2O2 produced endogenously (by Hb autoxidation and subsequent superoxide dismutation) and exogenously (e.g., from activated neutrophils) at low (physiologic) concentrations (11, 32, 38, 40, 43, 45) and, therefore, may limit oxidative injury to other cells/tissues in the vasculature (6, 57).",
+      "citation": {
+        "type": "PubMed",
+        "name": "Antioxidants &amp; redox signaling",
+        "reference": "25264713",
+        "title": "Peroxiredoxin-2 recycling is inhibited during erythrocyte storage.",
+        "volume": "22",
+        "pages": "294-307",
+        "date": "2015-02-01",
+        "first": "Harper VM",
+        "last": "Patel RP",
+        "authors": [
+          "Barnes S",
+          "Harper VM",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R",
+          "Sun CW",
+          "Townes T",
+          "Wilson L"
+        ]
+      },
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        },
+        "Cell": {
+          "erythrocyte": true
+        }
+      },
+      "source": 7,
+      "target": 6,
+      "key": "766eb10f2a49f37ff5f407c23d9de59023916f2920df01d8621c298b7b82ea677bacd88cecd28b2cb0c0b385c0a1f07fedc54897aa00983178f746cfd0ed27c8"
+    },
+    {
+      "line": 174,
+      "relation": "decreases",
+      "evidence": "This is consistent with increased Prx-2 oxidation and a role for this enzyme in protecting RBC membrane constituents from storage-dependent oxidative stress (49, 50).",
+      "citation": {
+        "type": "PubMed",
+        "name": "Antioxidants &amp; redox signaling",
+        "reference": "25264713",
+        "title": "Peroxiredoxin-2 recycling is inhibited during erythrocyte storage.",
+        "volume": "22",
+        "pages": "294-307",
+        "date": "2015-02-01",
+        "first": "Harper VM",
+        "last": "Patel RP",
+        "authors": [
+          "Barnes S",
+          "Harper VM",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R",
+          "Sun CW",
+          "Townes T",
+          "Wilson L"
+        ]
+      },
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        },
+        "Cell": {
+          "erythrocyte": true
+        },
+        "TimePoint": {
+          "5 min": true
+        }
+      },
+      "source": 7,
+      "target": 6,
+      "key": "a9f63280559b1bbfdb8ab11e2a8d83106a5a4a91a982df715c4631e78f6fadb43cfcf968284057d59f12321f0389ee5081ef151fd3afb2ec752f22d326d3abb0"
+    },
+    {
+      "line": 182,
+      "relation": "decreases",
+      "evidence": "The potential significance of this finding is underscored by the fact that Prx-2 is considered the primary antioxidant system to negate H2O2-mediated oxidative damage in the RBC (41).",
+      "citation": {
+        "type": "PubMed",
+        "name": "Antioxidants &amp; redox signaling",
+        "reference": "25264713",
+        "title": "Peroxiredoxin-2 recycling is inhibited during erythrocyte storage.",
+        "volume": "22",
+        "pages": "294-307",
+        "date": "2015-02-01",
+        "first": "Harper VM",
+        "last": "Patel RP",
+        "authors": [
+          "Barnes S",
+          "Harper VM",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R",
+          "Sun CW",
+          "Townes T",
+          "Wilson L"
+        ]
+      },
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        },
+        "Cell": {
+          "erythrocyte": true
+        },
+        "TimePoint": {
+          "5 min": true
+        }
+      },
+      "source": 7,
+      "target": 6,
+      "key": "bf2e3ee132d7e711fe0a3b6edb93f42dbec399431228380e4e6d975921c49dbfd863d999d86640a0eb155404008599db022646f2cda46cc14fcaee0837144731"
+    },
+    {
+      "line": 122,
+      "relation": "positiveCorrelation",
+      "evidence": "Figure 1B presents these data and shows that (i) basal (time 0) Prx-2 oxidation was higher at day 35 relative to day 14 and 28 ( p < 0.05 by one-way analysis of variance (ANOVA) with Tukey post hoc test); (ii) H2O2 significantly increased Prx-2 oxidation, which was maximal at the first time point (5 min) measured; (iii) the magnitude of the maximal level of Prx-2 oxidation increased with RBC storage age ( p < 0.05 by one-way ANOVA with Tukey post hoc test for day 7 vs. 35 for 5 min data); and (iv) dimeric Prx-2 was slowly reduced back to the monomer over 60 min; however, this was not observed with day 35 RBC, where Prx- 2 remained > 75% oxidized.",
+      "citation": {
+        "type": "PubMed",
+        "name": "Antioxidants &amp; redox signaling",
+        "reference": "25264713",
+        "title": "Peroxiredoxin-2 recycling is inhibited during erythrocyte storage.",
+        "volume": "22",
+        "pages": "294-307",
+        "date": "2015-02-01",
+        "first": "Harper VM",
+        "last": "Patel RP",
+        "authors": [
+          "Barnes S",
+          "Harper VM",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R",
+          "Sun CW",
+          "Townes T",
+          "Wilson L"
+        ]
+      },
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "Cell": {
+          "erythrocyte": true
+        },
+        "TimePoint": {
+          "5 min": true
+        }
+      },
+      "source": 7,
+      "target": 5,
+      "key": "0e16ee4f582a587771c112170c44f028e55d3fb522fceb3e519daaa764bbc3b742df3e7c0d5c552f299a8629a58c753b420ec6e51cb1fb0c6b05d5d9f6e1db26"
+    },
+    {
+      "line": 129,
+      "relation": "negativeCorrelation",
+      "evidence": "Finally, slower Prx-2 reduction correlated with increased H2O2 (10 lM)-induced hemolysis of day 35 RBC compared with day 7 RBC (Fig. 1D).",
+      "citation": {
+        "type": "PubMed",
+        "name": "Antioxidants &amp; redox signaling",
+        "reference": "25264713",
+        "title": "Peroxiredoxin-2 recycling is inhibited during erythrocyte storage.",
+        "volume": "22",
+        "pages": "294-307",
+        "date": "2015-02-01",
+        "first": "Harper VM",
+        "last": "Patel RP",
+        "authors": [
+          "Barnes S",
+          "Harper VM",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R",
+          "Sun CW",
+          "Townes T",
+          "Wilson L"
+        ]
+      },
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "Cell": {
+          "erythrocyte": true
+        },
+        "TimePoint": {
+          "5 min": true
+        }
+      },
+      "source": 7,
+      "target": 9,
+      "key": "46ea7bae2dd4b34ec7403e8654e04729abf341dddaf5cb440d4d5fb49d59764b4c8309790e3af705fd5a5483b97ce4e1a7d132cf33ecceab841ecb670d560232"
+    },
+    {
+      "line": 145,
+      "relation": "negativeCorrelation",
+      "evidence": "Inclusion of glucose increased the rate of Prx-2 reduction for both day 7 and 35 RBC compared with the reaction without glucose (compare to Fig. 1).",
+      "citation": {
+        "type": "PubMed",
+        "name": "Antioxidants &amp; redox signaling",
+        "reference": "25264713",
+        "title": "Peroxiredoxin-2 recycling is inhibited during erythrocyte storage.",
+        "volume": "22",
+        "pages": "294-307",
+        "date": "2015-02-01",
+        "first": "Harper VM",
+        "last": "Patel RP",
+        "authors": [
+          "Barnes S",
+          "Harper VM",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R",
+          "Sun CW",
+          "Townes T",
+          "Wilson L"
+        ]
+      },
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "Cell": {
+          "erythrocyte": true
+        },
+        "TimePoint": {
+          "5 min": true
+        }
+      },
+      "source": 7,
+      "target": 3,
+      "key": "fa306925837f700d9bae25c447f57904111fa770bf0fdbc003db74ea346825af3352fe4b3d97be6e0a930d9cc4fe1771695bcbd5a5062452dbd4e3141fd6942b"
+    },
+    {
+      "line": 166,
+      "relation": "positiveCorrelation",
+      "evidence": "Figure 5C shows that pretreatment of human RBC stored for 35 days with CO, or CO-added 5 min after H2O2, significantly accelerated Prx-2 reduction from the dimer to monomer (by *35% relative to control at 20 min).",
+      "citation": {
+        "type": "PubMed",
+        "name": "Antioxidants &amp; redox signaling",
+        "reference": "25264713",
+        "title": "Peroxiredoxin-2 recycling is inhibited during erythrocyte storage.",
+        "volume": "22",
+        "pages": "294-307",
+        "date": "2015-02-01",
+        "first": "Harper VM",
+        "last": "Patel RP",
+        "authors": [
+          "Barnes S",
+          "Harper VM",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R",
+          "Sun CW",
+          "Townes T",
+          "Wilson L"
+        ]
+      },
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "Cell": {
+          "erythrocyte": true
+        },
+        "TimePoint": {
+          "5 min": true
+        }
+      },
+      "source": 7,
+      "target": 0,
+      "key": "7e53e36c82078e3f0a87551751a691854263f7f2c37ce3e7e4e9ac518932c80f47472489cd37541f024260280adb62a716037f75b96e7dab7df25bbae57163f6"
+    },
+    {
+      "line": 188,
+      "relation": "positiveCorrelation",
+      "evidence": "Data presented here suggest that the b93Cys is also involved in Prx-2 reduction.",
+      "citation": {
+        "type": "PubMed",
+        "name": "Antioxidants &amp; redox signaling",
+        "reference": "25264713",
+        "title": "Peroxiredoxin-2 recycling is inhibited during erythrocyte storage.",
+        "volume": "22",
+        "pages": "294-307",
+        "date": "2015-02-01",
+        "first": "Harper VM",
+        "last": "Patel RP",
+        "authors": [
+          "Barnes S",
+          "Harper VM",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R",
+          "Sun CW",
+          "Townes T",
+          "Wilson L"
+        ]
+      },
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        },
+        "Cell": {
+          "erythrocyte": true
+        },
+        "TimePoint": {
+          "5 min": true
+        }
+      },
+      "source": 7,
+      "target": 4,
+      "key": "d88cdee04e1229418c1f351e255d72f88202d19db32b5e4dfe68c0642444de2d7b2acfea4852c9523b323bcb1ddbaf290b329aa0a49674ff866cd60a917c75a7"
+    },
+    {
+      "line": 102,
+      "relation": "negativeCorrelation",
+      "evidence": "Peroxiredoxin-2 (Prx-2) has emerged as the critical antioxidant protecting RBCs from H2O2 produced endogenously (by Hb autoxidation and subsequent superoxide dismutation) and exogenously (e.g., from activated neutrophils) at low (physiologic) concentrations (11, 32, 38, 40, 43, 45) and, therefore, may limit oxidative injury to other cells/tissues in the vasculature (6, 57).",
+      "citation": {
+        "type": "PubMed",
+        "name": "Antioxidants &amp; redox signaling",
+        "reference": "25264713",
+        "title": "Peroxiredoxin-2 recycling is inhibited during erythrocyte storage.",
+        "volume": "22",
+        "pages": "294-307",
+        "date": "2015-02-01",
+        "first": "Harper VM",
+        "last": "Patel RP",
+        "authors": [
+          "Barnes S",
+          "Harper VM",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R",
+          "Sun CW",
+          "Townes T",
+          "Wilson L"
+        ]
+      },
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        },
+        "Cell": {
+          "erythrocyte": true
+        }
+      },
+      "source": 1,
+      "target": 7,
+      "key": "4e9f535bbb1622e3082684086cb19428fbaaca58ee5ef8624309829b7e1b0fbaf6b2f4a7a56339c99ae0f9ca7d68a8943cd58584c36301155844c0b468345d47"
+    },
+    {
+      "line": 121,
+      "relation": "positiveCorrelation",
+      "evidence": "Figure 1B presents these data and shows that (i) basal (time 0) Prx-2 oxidation was higher at day 35 relative to day 14 and 28 ( p < 0.05 by one-way analysis of variance (ANOVA) with Tukey post hoc test); (ii) H2O2 significantly increased Prx-2 oxidation, which was maximal at the first time point (5 min) measured; (iii) the magnitude of the maximal level of Prx-2 oxidation increased with RBC storage age ( p < 0.05 by one-way ANOVA with Tukey post hoc test for day 7 vs. 35 for 5 min data); and (iv) dimeric Prx-2 was slowly reduced back to the monomer over 60 min; however, this was not observed with day 35 RBC, where Prx- 2 remained > 75% oxidized.",
+      "citation": {
+        "type": "PubMed",
+        "name": "Antioxidants &amp; redox signaling",
+        "reference": "25264713",
+        "title": "Peroxiredoxin-2 recycling is inhibited during erythrocyte storage.",
+        "volume": "22",
+        "pages": "294-307",
+        "date": "2015-02-01",
+        "first": "Harper VM",
+        "last": "Patel RP",
+        "authors": [
+          "Barnes S",
+          "Harper VM",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R",
+          "Sun CW",
+          "Townes T",
+          "Wilson L"
+        ]
+      },
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "Cell": {
+          "erythrocyte": true
+        },
+        "TimePoint": {
+          "5 min": true
+        }
+      },
+      "source": 1,
+      "target": 7,
+      "key": "7743dfc2aebbc539f9613f93f0e8d1a7757e26b5c125fc7a3ce9cc75ef6328ece137be3675c2194c31fd58bf098c158d176997a3845f92af8b5452989e266c5f"
+    },
+    {
+      "line": 128,
+      "relation": "positiveCorrelation",
+      "evidence": "Finally, slower Prx-2 reduction correlated with increased H2O2 (10 lM)-induced hemolysis of day 35 RBC compared with day 7 RBC (Fig. 1D).",
+      "citation": {
+        "type": "PubMed",
+        "name": "Antioxidants &amp; redox signaling",
+        "reference": "25264713",
+        "title": "Peroxiredoxin-2 recycling is inhibited during erythrocyte storage.",
+        "volume": "22",
+        "pages": "294-307",
+        "date": "2015-02-01",
+        "first": "Harper VM",
+        "last": "Patel RP",
+        "authors": [
+          "Barnes S",
+          "Harper VM",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R",
+          "Sun CW",
+          "Townes T",
+          "Wilson L"
+        ]
+      },
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "Cell": {
+          "erythrocyte": true
+        },
+        "TimePoint": {
+          "5 min": true
+        }
+      },
+      "source": 1,
+      "target": 9,
+      "key": "32fe40a1ecc5fae3c8c7eb93b6a4f86a289b38bd0deb795cbac47a69f72cb61cd9f9a7654701086cd1b4afc5da9cb9633ed1815b7f8042ca5c5454dff221af8c"
+    },
+    {
+      "line": 103,
+      "relation": "negativeCorrelation",
+      "evidence": "Peroxiredoxin-2 (Prx-2) has emerged as the critical antioxidant protecting RBCs from H2O2 produced endogenously (by Hb autoxidation and subsequent superoxide dismutation) and exogenously (e.g., from activated neutrophils) at low (physiologic) concentrations (11, 32, 38, 40, 43, 45) and, therefore, may limit oxidative injury to other cells/tissues in the vasculature (6, 57).",
+      "citation": {
+        "type": "PubMed",
+        "name": "Antioxidants &amp; redox signaling",
+        "reference": "25264713",
+        "title": "Peroxiredoxin-2 recycling is inhibited during erythrocyte storage.",
+        "volume": "22",
+        "pages": "294-307",
+        "date": "2015-02-01",
+        "first": "Harper VM",
+        "last": "Patel RP",
+        "authors": [
+          "Barnes S",
+          "Harper VM",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R",
+          "Sun CW",
+          "Townes T",
+          "Wilson L"
+        ]
+      },
+      "annotations": {
+        "TextLocation": {
+          "Introduction": true
+        },
+        "Cell": {
+          "erythrocyte": true
+        }
+      },
+      "source": 6,
+      "target": 7,
+      "key": "19cd7a50fe159be30edc37151392c08a2f4cc94f9abba09425d8baea45df0dfaea7d089d80770ea08973082f9f45380a790b375666a4a7ee2f99a652aa58a93c"
+    },
+    {
+      "line": 122,
+      "relation": "positiveCorrelation",
+      "evidence": "Figure 1B presents these data and shows that (i) basal (time 0) Prx-2 oxidation was higher at day 35 relative to day 14 and 28 ( p < 0.05 by one-way analysis of variance (ANOVA) with Tukey post hoc test); (ii) H2O2 significantly increased Prx-2 oxidation, which was maximal at the first time point (5 min) measured; (iii) the magnitude of the maximal level of Prx-2 oxidation increased with RBC storage age ( p < 0.05 by one-way ANOVA with Tukey post hoc test for day 7 vs. 35 for 5 min data); and (iv) dimeric Prx-2 was slowly reduced back to the monomer over 60 min; however, this was not observed with day 35 RBC, where Prx- 2 remained > 75% oxidized.",
+      "citation": {
+        "type": "PubMed",
+        "name": "Antioxidants &amp; redox signaling",
+        "reference": "25264713",
+        "title": "Peroxiredoxin-2 recycling is inhibited during erythrocyte storage.",
+        "volume": "22",
+        "pages": "294-307",
+        "date": "2015-02-01",
+        "first": "Harper VM",
+        "last": "Patel RP",
+        "authors": [
+          "Barnes S",
+          "Harper VM",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R",
+          "Sun CW",
+          "Townes T",
+          "Wilson L"
+        ]
+      },
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "Cell": {
+          "erythrocyte": true
+        },
+        "TimePoint": {
+          "5 min": true
+        }
+      },
+      "source": 5,
+      "target": 7,
+      "key": "349e65025c0be274e643a7a11aa73550f46f0e352d10606c43e4351e3262a55facfe2a6f4897a0c879f6575c3ac3931c77225cec5adb391efa3c640edd08c06f"
+    },
+    {
+      "line": 137,
+      "relation": "causesNoChange",
+      "evidence": "However, no differences in basal Trx-reductase activities, Trx protein levels, or NADPH levels were observed in day 7 versus 35 RBC (Fig. 2), suggesting that this was not the basis of differential Prx-2 reduction kinetics.",
+      "citation": {
+        "type": "PubMed",
+        "name": "Antioxidants &amp; redox signaling",
+        "reference": "25264713",
+        "title": "Peroxiredoxin-2 recycling is inhibited during erythrocyte storage.",
+        "volume": "22",
+        "pages": "294-307",
+        "date": "2015-02-01",
+        "first": "Harper VM",
+        "last": "Patel RP",
+        "authors": [
+          "Barnes S",
+          "Harper VM",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R",
+          "Sun CW",
+          "Townes T",
+          "Wilson L"
+        ]
+      },
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "Cell": {
+          "erythrocyte": true
+        },
+        "TimePoint": {
+          "5 min": true
+        }
+      },
+      "source": 5,
+      "target": 8,
+      "key": "ee671fdb9276e4ec7a3b393731f8a2632e161d07f3115a4a64347ef0e54fba08ae2338b4ea02b4748eb44fdcbc3dfa9fec4c5fa305afd9176bc362f114a6a6d1"
+    },
+    {
+      "line": 138,
+      "relation": "causesNoChange",
+      "evidence": "However, no differences in basal Trx-reductase activities, Trx protein levels, or NADPH levels were observed in day 7 versus 35 RBC (Fig. 2), suggesting that this was not the basis of differential Prx-2 reduction kinetics.",
+      "citation": {
+        "type": "PubMed",
+        "name": "Antioxidants &amp; redox signaling",
+        "reference": "25264713",
+        "title": "Peroxiredoxin-2 recycling is inhibited during erythrocyte storage.",
+        "volume": "22",
+        "pages": "294-307",
+        "date": "2015-02-01",
+        "first": "Harper VM",
+        "last": "Patel RP",
+        "authors": [
+          "Barnes S",
+          "Harper VM",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R",
+          "Sun CW",
+          "Townes T",
+          "Wilson L"
+        ]
+      },
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "Cell": {
+          "erythrocyte": true
+        },
+        "TimePoint": {
+          "5 min": true
+        }
+      },
+      "source": 5,
+      "target": 2,
+      "key": "720914a3e5cf5f0e9623e958816cc3d0a6f7db7c883d291f5a5ecb3dd2ed45c9e72f80c4450ab6a76546d246173d1a3fd6ff827e419623add75c6c794b6aa1d4"
+    },
+    {
+      "line": 128,
+      "relation": "positiveCorrelation",
+      "evidence": "Finally, slower Prx-2 reduction correlated with increased H2O2 (10 lM)-induced hemolysis of day 35 RBC compared with day 7 RBC (Fig. 1D).",
+      "citation": {
+        "type": "PubMed",
+        "name": "Antioxidants &amp; redox signaling",
+        "reference": "25264713",
+        "title": "Peroxiredoxin-2 recycling is inhibited during erythrocyte storage.",
+        "volume": "22",
+        "pages": "294-307",
+        "date": "2015-02-01",
+        "first": "Harper VM",
+        "last": "Patel RP",
+        "authors": [
+          "Barnes S",
+          "Harper VM",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R",
+          "Sun CW",
+          "Townes T",
+          "Wilson L"
+        ]
+      },
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "Cell": {
+          "erythrocyte": true
+        },
+        "TimePoint": {
+          "5 min": true
+        }
+      },
+      "source": 9,
+      "target": 1,
+      "key": "3ec1f4cb9fa8c7b72afc201c05b08886e17d680a7d7359c8fd85253d68c62cd3d2c75d5dff23c61a22a82f52f7222867eec9da84a9aa4752a9a6fcb4f113da1b"
+    },
+    {
+      "line": 129,
+      "relation": "negativeCorrelation",
+      "evidence": "Finally, slower Prx-2 reduction correlated with increased H2O2 (10 lM)-induced hemolysis of day 35 RBC compared with day 7 RBC (Fig. 1D).",
+      "citation": {
+        "type": "PubMed",
+        "name": "Antioxidants &amp; redox signaling",
+        "reference": "25264713",
+        "title": "Peroxiredoxin-2 recycling is inhibited during erythrocyte storage.",
+        "volume": "22",
+        "pages": "294-307",
+        "date": "2015-02-01",
+        "first": "Harper VM",
+        "last": "Patel RP",
+        "authors": [
+          "Barnes S",
+          "Harper VM",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R",
+          "Sun CW",
+          "Townes T",
+          "Wilson L"
+        ]
+      },
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "Cell": {
+          "erythrocyte": true
+        },
+        "TimePoint": {
+          "5 min": true
+        }
+      },
+      "source": 9,
+      "target": 7,
+      "key": "16a834f6663083399bb8e50eb02ad7680e437168fc6dfac547a56cd86efe9ac36c1a1ff82860b20af2c735c3f23855bb280ec199f5c7a0f960859f17a6f07121"
+    },
+    {
+      "line": 145,
+      "relation": "negativeCorrelation",
+      "evidence": "Inclusion of glucose increased the rate of Prx-2 reduction for both day 7 and 35 RBC compared with the reaction without glucose (compare to Fig. 1).",
+      "citation": {
+        "type": "PubMed",
+        "name": "Antioxidants &amp; redox signaling",
+        "reference": "25264713",
+        "title": "Peroxiredoxin-2 recycling is inhibited during erythrocyte storage.",
+        "volume": "22",
+        "pages": "294-307",
+        "date": "2015-02-01",
+        "first": "Harper VM",
+        "last": "Patel RP",
+        "authors": [
+          "Barnes S",
+          "Harper VM",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R",
+          "Sun CW",
+          "Townes T",
+          "Wilson L"
+        ]
+      },
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "Cell": {
+          "erythrocyte": true
+        },
+        "TimePoint": {
+          "5 min": true
+        }
+      },
+      "source": 3,
+      "target": 7,
+      "key": "fed418db1a1f4f41088ca05701f015f3bbb961a9ff4ee7425bc33fb5a2a36a3fbae44f773b3be836b4b661bcbea03913b0fdf96ee3fddda9e0117873089cf51e"
+    },
+    {
+      "line": 156,
+      "relation": "decreases",
+      "evidence": "Presaturation of RBC with CO affected neither initial H2O2- dependent Prx-2 oxidation nor Prx-2 reduction in either RBC, although a trend toward decreased Prx-2 oxidation over 5 min was noted in CO-treated cells ( p = 0.08 between with and without CO groups for b93Cys RBC).",
+      "citation": {
+        "type": "PubMed",
+        "name": "Antioxidants &amp; redox signaling",
+        "reference": "25264713",
+        "title": "Peroxiredoxin-2 recycling is inhibited during erythrocyte storage.",
+        "volume": "22",
+        "pages": "294-307",
+        "date": "2015-02-01",
+        "first": "Harper VM",
+        "last": "Patel RP",
+        "authors": [
+          "Barnes S",
+          "Harper VM",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R",
+          "Sun CW",
+          "Townes T",
+          "Wilson L"
+        ]
+      },
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "Cell": {
+          "erythrocyte": true
+        },
+        "TimePoint": {
+          "5 min": true
+        }
+      },
+      "source": 0,
+      "target": 7,
+      "key": "f9f639b24394ffcac98d6e6b8bfe8f0feede26217d675798784a14392a63e88d81d4353464e14556a2a39e564b854b9c02bc83ed9614af30971bb83a4d2b635d"
+    },
+    {
+      "line": 166,
+      "relation": "positiveCorrelation",
+      "evidence": "Figure 5C shows that pretreatment of human RBC stored for 35 days with CO, or CO-added 5 min after H2O2, significantly accelerated Prx-2 reduction from the dimer to monomer (by *35% relative to control at 20 min).",
+      "citation": {
+        "type": "PubMed",
+        "name": "Antioxidants &amp; redox signaling",
+        "reference": "25264713",
+        "title": "Peroxiredoxin-2 recycling is inhibited during erythrocyte storage.",
+        "volume": "22",
+        "pages": "294-307",
+        "date": "2015-02-01",
+        "first": "Harper VM",
+        "last": "Patel RP",
+        "authors": [
+          "Barnes S",
+          "Harper VM",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R",
+          "Sun CW",
+          "Townes T",
+          "Wilson L"
+        ]
+      },
+      "annotations": {
+        "TextLocation": {
+          "Results": true
+        },
+        "Cell": {
+          "erythrocyte": true
+        },
+        "TimePoint": {
+          "5 min": true
+        }
+      },
+      "source": 0,
+      "target": 7,
+      "key": "d0f79d6f804d1108864704446823fcda1edb177ddb7728dc978c3a8adb1f1e5c1979c3467d3cf648944a6cfa82247cd2893b19cebdf24f87df503b8071fdeb04"
+    },
+    {
+      "line": 188,
+      "relation": "positiveCorrelation",
+      "evidence": "Data presented here suggest that the b93Cys is also involved in Prx-2 reduction.",
+      "citation": {
+        "type": "PubMed",
+        "name": "Antioxidants &amp; redox signaling",
+        "reference": "25264713",
+        "title": "Peroxiredoxin-2 recycling is inhibited during erythrocyte storage.",
+        "volume": "22",
+        "pages": "294-307",
+        "date": "2015-02-01",
+        "first": "Harper VM",
+        "last": "Patel RP",
+        "authors": [
+          "Barnes S",
+          "Harper VM",
+          "Marques MB",
+          "Oh JY",
+          "Patel RP",
+          "Stapley R",
+          "Sun CW",
+          "Townes T",
+          "Wilson L"
+        ]
+      },
+      "annotations": {
+        "TextLocation": {
+          "Discussion": true
+        },
+        "Cell": {
+          "erythrocyte": true
+        },
+        "TimePoint": {
+          "5 min": true
+        }
+      },
+      "source": 4,
+      "target": 7,
+      "key": "a8e272ad221fffbf6d983dc1af889d0a49d7b7038e7db7e6fa9a8a057845eeec41a6d1818984c8854f4426b6bbdb585e673e5043904261b4837e436d1c804c77"
+    }
+  ]
+}

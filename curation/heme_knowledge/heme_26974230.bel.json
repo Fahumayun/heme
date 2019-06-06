@@ -1,0 +1,1289 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {
+    "pybel_version": "0.13.2",
+    "document_metadata": {
+      "copyright": "Copyright © 2018 Fraunhofer Institute SCAI, All rights reserved.",
+      "licenses": "Private Ownership to Fraunhofer Institute SCAI",
+      "contact": "farah.humayun@scai-extern.fraunhofer.de",
+      "name": "heme_26974230.bel",
+      "version": "1.0.0",
+      "authors": "Farah Humayun",
+      "description": "Heme BEL model is a disease model based on Biological Expression Language (BEL) containing the core mechanisms of heme as modulator in Hemolytic diseases such as sickle-cell anemia, beta-thalassemia, malaria and autoimmune hemolytic anemia."
+    },
+    "namespace_url": {
+      "CHEBI": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/chebi-names.belns",
+      "DRUGBANK": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/drugbank-names.belns",
+      "ECCODE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/ec-code.belns",
+      "HBP": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/export/hbp-names.belns",
+      "HGNC": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/hgnc-names.belns",
+      "HGNCGENEFAMILY": "https://raw.githubusercontent.com/pharmacome/terminology/3074b85b858455d8eeb76cfcdef685ced19bbe11/external/hgnc.genefamily-names.belns",
+      "GO": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/go-names.belns",
+      "INTERPRO": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/interpro-names.belns",
+      "MESH": "https://raw.githubusercontent.com/pharmacome/terminology/01c9daa61012b37dd0a1bc962521ba51a15b38f1/external/mesh-names.belns",
+      "MGI": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/mgi-names.belns",
+      "MIRBASE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/mirbase-names.belns",
+      "NCBIGENE": "https://raw.githubusercontent.com/pharmacome/terminology/b46b65c3da259b6e86026514dfececab7c22a11b/external/entrez.belns",
+      "PFAM": "https://raw.githubusercontent.com/pharmacome/terminology/8ccfed235e418e4c8aa576f9a5ef0f838e794c7f/external/pfam-names.belns",
+      "RGD": "https://raw.githubusercontent.com/pharmacome/terminology/f2f993e599694ab5ce989cc39d789a499f75db99/external/rgd-names.belns",
+      "FPLX": "https://raw.githubusercontent.com/sorgerlab/famplex/e8ae9926ff95266032cb74f77973c84939bffbeb/export/famplex.belns",
+      "CTO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/clinical-trial-ontology/clinical-trial-ontology-1.0.0.belns",
+      "DO": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/disease-ontology/disease-ontology-20170725.belns",
+      "HP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/hp/hp-20171108.belns",
+      "SCOMP": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-named-complexes/selventa-named-complexes-20170725.belns",
+      "SFAM": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/selventa-protein-families/selventa-protein-families-20170725.belns"
+    },
+    "namespace_pattern": {
+      "DBSNP": "rs[0-9]+",
+      "TAXONOMY": "^\\d+$",
+      "UNIPROT": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$",
+      "PUBCHEM": "^\\d+$",
+      "HM": ".*"
+    },
+    "namespaces_uncached": [],
+    "annotation_url": {
+      "Anatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/anatomy/anatomy-20170511.belanno",
+      "CellLine": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20170511.belanno",
+      "CellStructure": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-structure/cell-structure-20170511.belanno",
+      "Cell": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell/cell-20170511.belanno",
+      "Confidence": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/confidence/confidence-1.0.0.belanno",
+      "Disease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/disease/disease-20170511.belanno",
+      "Gender": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/gender/gender-1.0.0.belanno",
+      "MeSHAnatomy": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-anatomy/mesh-anatomy-20170511.belanno",
+      "MeSHDisease": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/mesh-diseases/mesh-diseases-20170511.belanno",
+      "Subgraph": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/neurommsig/neurommsig-1.0.3.belanno",
+      "TextLocation": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/text-location/text-location-1.0.1.belanno"
+    },
+    "annotation_pattern": {
+      "Species": ".*",
+      "TimePoint": ".*",
+      "Concentration": ".*"
+    },
+    "annotation_list": {},
+    "path": "c:\\users\\syedf\\pycharmprojects\\heme\\curation\\heme_knowledge\\heme_26974230.bel"
+  },
+  "nodes": [
+    {
+      "function": "Abundance",
+      "namespace": "CHEBI",
+      "name": "carbon monoxide",
+      "id": "f9a3abc538e60a3026dee8cad1fc1437008be2a35790de8c753ee79bbbcc228bb80f6053c1170690621df714e7420bc4d4144d1883eca1753cffae3c0b1a99b4",
+      "bel": "a(CHEBI:\"carbon monoxide\")"
+    },
+    {
+      "function": "Abundance",
+      "namespace": "CHEBI",
+      "name": "heme",
+      "id": "719ca721f83fc39055585fbe7f31ad8173f7538a3cfa3792732de47c43a36048e922aa16d66b08e964b7d4a89e214d0d313bce30a38fe67755b9428cdec247cc",
+      "bel": "a(CHEBI:heme)"
+    },
+    {
+      "function": "Abundance",
+      "namespace": "CHEBI",
+      "name": "methemoglobin",
+      "id": "7805bca22642b820fb0a026eb5c67eb4512f0a021ec5c97c5f505f5706c0ef4cb986edf806c547d40110c084b98e15c3520dd558cb96c5071b4dd9709e641130",
+      "bel": "a(CHEBI:methemoglobin)"
+    },
+    {
+      "function": "Abundance",
+      "namespace": "GO",
+      "name": "mitochondrial respiratory chain complex IV",
+      "id": "5dca14eaa0cc67106c06811061f22ddfd8693b9d2531068c003decc906ea20c8dcaee44c3227a412135fdff9a6b28e0a9b9a55fd577525d6aded9cbfeb71df55",
+      "bel": "a(GO:\"mitochondrial respiratory chain complex IV\")"
+    },
+    {
+      "function": "Abundance",
+      "namespace": "HM",
+      "name": "cytoskeletal reorganization",
+      "id": "16e8c60a223550602bd10318e46fe7b9ffe4faf0e47b90846fa8c0c8e736ff5e9129aed4623f1f5e3b3317c35750d7b591f11fd073797fd989707cea840499b3",
+      "bel": "a(HM:\"cytoskeletal reorganization\")"
+    },
+    {
+      "function": "Abundance",
+      "namespace": "MESH",
+      "name": "Mitogen-Activated Protein Kinases",
+      "id": "86961c6e2bd820e9ad167ca01f05778410aaca1d318cfac544162c60d8cfa1f79db0548b59750206f92259e4e426945d573b8dacd03740b9599a0eaae964e629",
+      "bel": "a(MESH:\"Mitogen-Activated Protein Kinases\")"
+    },
+    {
+      "function": "Abundance",
+      "namespace": "MESH",
+      "name": "ferrylhemoglobin",
+      "id": "e9e7ab9bd7169afff944c21b3a5bfdd5d540f139d70efbb74aa6469f05128eec6a113dfd0c957fb11568801c62722ed4b2b11d972a64ffd74fa8406be0bbcaeb",
+      "bel": "a(MESH:ferrylhemoglobin)"
+    },
+    {
+      "function": "BiologicalProcess",
+      "namespace": "GO",
+      "name": "cellular respiration",
+      "id": "9ddd1e2f8de9532f4c9e276a14aa2dbb15c257bbe5ac1b1c60dc9d758691015a32029e530fa94ebda65285da5fa8a399da7451a7e873368708276e6ec361d1e0",
+      "bel": "bp(GO:\"cellular respiration\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "namespace": "GO",
+      "name": "mitochondrial depolarization",
+      "id": "30d9f25394b2ad97d7b9c14d10277ce7835d8f4cebfbe19e9432d34d54d2786c3cf822cc4a12eface8909a7a4e7de0878465422578988d1725f7146eed3e6d64",
+      "bel": "bp(GO:\"mitochondrial depolarization\")"
+    },
+    {
+      "function": "BiologicalProcess",
+      "namespace": "MESH",
+      "name": "Oxidative Stress",
+      "id": "32bd3ab5e8a3a26be3209856c88741f0f0e2dff98d2587599a6a21b0f4793c5d8feb1194ea2166cf3cece076e7095530b116270e6655bc8feb35a437fda42cf6",
+      "bel": "bp(MESH:\"Oxidative Stress\")"
+    },
+    {
+      "function": "Complex",
+      "members": [
+        {
+          "function": "Abundance",
+          "namespace": "GO",
+          "name": "mitochondrial respiratory chain complex IV",
+          "id": "5dca14eaa0cc67106c06811061f22ddfd8693b9d2531068c003decc906ea20c8dcaee44c3227a412135fdff9a6b28e0a9b9a55fd577525d6aded9cbfeb71df55",
+          "bel": "a(GO:\"mitochondrial respiratory chain complex IV\")"
+        }
+      ],
+      "id": "8b7d023af61861fe512264bac4ffe61109cad8002e55a46d1da5385039dd6aae080cbe334871bc8e9d0823f92c682d7b668ca895ee464a870d4cbc4f137631df",
+      "bel": "complex(a(GO:\"mitochondrial respiratory chain complex IV\"))"
+    },
+    {
+      "function": "Protein",
+      "namespace": "HGNC",
+      "name": "HBB",
+      "id": "75606239f93ac271516eb110566907523dfdbf0a1937760050e049e79942bd684a190c3dd54b45444c2c5b5217192e72df697c824cbb392f90f2fa4005d9adb1",
+      "bel": "p(HGNC:HBB)"
+    },
+    {
+      "function": "Protein",
+      "namespace": "MGI",
+      "name": "Cox4i1",
+      "id": "dc1da0c5700e6cb5917e2da0b0b6c3cf008f5644e977ec56c6c857a210cae0f853ac9f6f9ed5b22aea4d46434c315fe95413c0182d5a73d7d0a695ecb5851975",
+      "bel": "p(MGI:Cox4i1)"
+    },
+    {
+      "function": "Protein",
+      "namespace": "MGI",
+      "name": "Fth1",
+      "id": "629223ed68b76b1ab4ba5d2bd75c9312b5f126aa38cb2098d0a19e29e163024a6a9ceff711f3467fd2bc80a1d0d769aeb58e7b899090a4c7f9392fa00ac0cf8f",
+      "bel": "p(MGI:Fth1)"
+    },
+    {
+      "function": "Protein",
+      "namespace": "MGI",
+      "name": "Hmox1",
+      "id": "8beffeed00e14a5c3c1432b49c64dd54603d509fa46333b37a0723447f7f90446ee1e4a2cfb3bb6646705515f1b0fab7318108466dbdad0781a8af61c7ae1d2e",
+      "bel": "p(MGI:Hmox1)"
+    },
+    {
+      "function": "Protein",
+      "namespace": "MGI",
+      "name": "Hp",
+      "id": "ef6b27651769abfe3e0b315e005cda4bbf0d64e50c65cb3ec3a5605a08018dd0bb6b8b25ca42f8ea3ccc0630388908ccd832178ba97d5ffa830e6aff4f9c9092",
+      "bel": "p(MGI:Hp)"
+    },
+    {
+      "function": "Protein",
+      "namespace": "MGI",
+      "name": "Hpx",
+      "id": "ccdc2439745a084dbbe73e6559429f702bfbdd9823ad4837b3232123b8c4a6c91ffd44740d989f368c570e462c58632040fcfa2d5e947abff06413ab3ce7ec44",
+      "bel": "p(MGI:Hpx)"
+    },
+    {
+      "function": "Protein",
+      "namespace": "MGI",
+      "name": "Nfkb1",
+      "id": "bd873db5e5e6862601a7b692d3b86b346ab6cf369e62988abcb6c1dabc91dd6497b19fe113634e8886545c2f3fd675b8cdc4a6d58f29af2db5f49ff3d19126c5",
+      "bel": "p(MGI:Nfkb1)"
+    },
+    {
+      "function": "Pathology",
+      "namespace": "MESH",
+      "name": "Hemolysis",
+      "id": "7cfbd58cfcd389d302278ecd54992b3d6039896ac077344c4c47bcafd5379ca16ef441da8e1f3105595a30c4dd7331ca2a6f864432425107f7850f8dbe210b09",
+      "bel": "path(MESH:Hemolysis)"
+    },
+    {
+      "function": "Pathology",
+      "namespace": "MESH",
+      "name": "Inflammation",
+      "id": "3196cc4c6a20279c822cae925a9b271d0224f2c8d468e3069a3ee460662be286b61db2f144c550686a9c624e58af4ffa7570f4f2384e1cb8ee40496f8cb3fa5e",
+      "bel": "path(MESH:Inflammation)"
+    }
+  ],
+  "links": [
+    {
+      "line": 96,
+      "relation": "positiveCorrelation",
+      "evidence": "Subsequent RBC lysis leads to release of acellular Hb, which, in turn, damages the alveolar epithelial cells.",
+      "citation": {
+        "type": "PubMed",
+        "name": "American journal of respiratory cell and molecular biology",
+        "reference": "26974230",
+        "title": "Oxidized Ferric and Ferryl Forms of Hemoglobin Trigger Mitochondrial Dysfunction and Injury in Alveolar Type I Cells.",
+        "volume": "55",
+        "pages": "288-98",
+        "date": "2016-08-01",
+        "first": "Chintagari NR",
+        "last": "Alayash AI",
+        "authors": [
+          "Alayash AI",
+          "Chintagari NR",
+          "Jana S"
+        ]
+      },
+      "annotations": {
+        "MeSHAnatomy": {
+          "Alveolar Epithelial Cells": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "source": 18,
+      "target": 11,
+      "key": "08f879d4548fdaa49927bd8eb804fcdda8317311013bd8dd807b9d10a7e6752c3011bb2fb8cafa964ec62249992fd9fbd83a60f14552a4cea005e0bcc51c3e0d"
+    },
+    {
+      "line": 96,
+      "relation": "positiveCorrelation",
+      "evidence": "Subsequent RBC lysis leads to release of acellular Hb, which, in turn, damages the alveolar epithelial cells.",
+      "citation": {
+        "type": "PubMed",
+        "name": "American journal of respiratory cell and molecular biology",
+        "reference": "26974230",
+        "title": "Oxidized Ferric and Ferryl Forms of Hemoglobin Trigger Mitochondrial Dysfunction and Injury in Alveolar Type I Cells.",
+        "volume": "55",
+        "pages": "288-98",
+        "date": "2016-08-01",
+        "first": "Chintagari NR",
+        "last": "Alayash AI",
+        "authors": [
+          "Alayash AI",
+          "Chintagari NR",
+          "Jana S"
+        ]
+      },
+      "annotations": {
+        "MeSHAnatomy": {
+          "Alveolar Epithelial Cells": true
+        },
+        "TextLocation": {
+          "Introduction": true
+        }
+      },
+      "source": 11,
+      "target": 18,
+      "key": "808d13166116057eb36388c36728e4f26ae827f2293f3141a8d39e248a88fcd5baba47669ca1d377a4e7973470ac823b5f701caad935db47f2ed09d058418186"
+    },
+    {
+      "line": 107,
+      "relation": "increases",
+      "evidence": "We also found that HbFe21 and HbFe31 activate NF-kB and mitogen-activated protein kinase pathways, as shown by phosphorylation of NF-kB p65 subunit and p44/42, respectively (Figure E3) as noted previously (31).",
+      "citation": {
+        "type": "PubMed",
+        "name": "American journal of respiratory cell and molecular biology",
+        "reference": "26974230",
+        "title": "Oxidized Ferric and Ferryl Forms of Hemoglobin Trigger Mitochondrial Dysfunction and Injury in Alveolar Type I Cells.",
+        "volume": "55",
+        "pages": "288-98",
+        "date": "2016-08-01",
+        "first": "Chintagari NR",
+        "last": "Alayash AI",
+        "authors": [
+          "Alayash AI",
+          "Chintagari NR",
+          "Jana S"
+        ]
+      },
+      "annotations": {
+        "MeSHAnatomy": {
+          "Alveolar Epithelial Cells": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "object": {
+        "modifier": "Activity"
+      },
+      "source": 11,
+      "target": 17,
+      "key": "3fea26a08cd3efb38bf03568ac30fdb3dc96e6d8101b104856fea5c6c28b8993fdfb5f0e3c3f3023b36d117a79065fd50bdeb13fc769f48e58cfdab60e34e21e"
+    },
+    {
+      "line": 141,
+      "relation": "increases",
+      "evidence": "We found a significant enrichment of HO-1 in the mitochondrial, but not in the cytosolic fractions after exposure to HbFe21 and HbFe31 (Figures 3A and 3B).",
+      "citation": {
+        "type": "PubMed",
+        "name": "American journal of respiratory cell and molecular biology",
+        "reference": "26974230",
+        "title": "Oxidized Ferric and Ferryl Forms of Hemoglobin Trigger Mitochondrial Dysfunction and Injury in Alveolar Type I Cells.",
+        "volume": "55",
+        "pages": "288-98",
+        "date": "2016-08-01",
+        "first": "Chintagari NR",
+        "last": "Alayash AI",
+        "authors": [
+          "Alayash AI",
+          "Chintagari NR",
+          "Jana S"
+        ]
+      },
+      "annotations": {
+        "MeSHAnatomy": {
+          "Mitochondria": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "source": 11,
+      "target": 14,
+      "key": "4035c82935569803d333cca0edb9fad5a0e8c83c733c60e644cbec83e305a98177f42ba1ff7549e1daa1666141b8bbe609d7b2a96cf3cbc00abe0d70d213dbb0"
+    },
+    {
+      "line": 149,
+      "relation": "causesNoChange",
+      "evidence": "Exposure to HbFe21 and HbFe31 did not alter the expression of cytochrome c oxidase IV protein (Figure 3A).",
+      "citation": {
+        "type": "PubMed",
+        "name": "American journal of respiratory cell and molecular biology",
+        "reference": "26974230",
+        "title": "Oxidized Ferric and Ferryl Forms of Hemoglobin Trigger Mitochondrial Dysfunction and Injury in Alveolar Type I Cells.",
+        "volume": "55",
+        "pages": "288-98",
+        "date": "2016-08-01",
+        "first": "Chintagari NR",
+        "last": "Alayash AI",
+        "authors": [
+          "Alayash AI",
+          "Chintagari NR",
+          "Jana S"
+        ]
+      },
+      "annotations": {
+        "MeSHAnatomy": {
+          "Mitochondria": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "source": 11,
+      "target": 12,
+      "key": "e8be7c0afc8d906e2588760a658f28b5f0af0af1ce5719273746fdc431ef4973969f77d7265eaefc5c92c98f374da737b17fc4f7954bf67c53c757be1c6f0590"
+    },
+    {
+      "line": 241,
+      "relation": "increases",
+      "evidence": "Exposure to Hb and its oxidized products increases heme overload on the AT1 cells. Heme overload induces the expression of HO-1 and iron-sequestering proteins, such as ferritin.",
+      "citation": {
+        "type": "PubMed",
+        "name": "American journal of respiratory cell and molecular biology",
+        "reference": "26974230",
+        "title": "Oxidized Ferric and Ferryl Forms of Hemoglobin Trigger Mitochondrial Dysfunction and Injury in Alveolar Type I Cells.",
+        "volume": "55",
+        "pages": "288-98",
+        "date": "2016-08-01",
+        "first": "Chintagari NR",
+        "last": "Alayash AI",
+        "authors": [
+          "Alayash AI",
+          "Chintagari NR",
+          "Jana S"
+        ]
+      },
+      "annotations": {
+        "MeSHAnatomy": {
+          "Mitochondria": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "Cell": {
+          "endothelial cell": true
+        }
+      },
+      "source": 11,
+      "target": 1,
+      "key": "a0828ff03509cd12e585c838a2842c7c5253945fcf96d4189c8c63c85531816c15c77c9efb01e1f26b6d2a72faf26d828bbc6f48c2e1b4be7d2fa49a2be6f51f"
+    },
+    {
+      "line": 108,
+      "relation": "increases",
+      "evidence": "We also found that HbFe21 and HbFe31 activate NF-kB and mitogen-activated protein kinase pathways, as shown by phosphorylation of NF-kB p65 subunit and p44/42, respectively (Figure E3) as noted previously (31).",
+      "citation": {
+        "type": "PubMed",
+        "name": "American journal of respiratory cell and molecular biology",
+        "reference": "26974230",
+        "title": "Oxidized Ferric and Ferryl Forms of Hemoglobin Trigger Mitochondrial Dysfunction and Injury in Alveolar Type I Cells.",
+        "volume": "55",
+        "pages": "288-98",
+        "date": "2016-08-01",
+        "first": "Chintagari NR",
+        "last": "Alayash AI",
+        "authors": [
+          "Alayash AI",
+          "Chintagari NR",
+          "Jana S"
+        ]
+      },
+      "annotations": {
+        "MeSHAnatomy": {
+          "Alveolar Epithelial Cells": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "object": {
+        "modifier": "Activity"
+      },
+      "source": 2,
+      "target": 5,
+      "key": "7989af05dba9b11dd3850f44592ee4380fdb2aca2fbb43c111c18f1843404a2a3287db5d8c252e9b84ccfcd82f41aa428715d8ca8ac50d3aa21eb3b34d1b2607"
+    },
+    {
+      "line": 124,
+      "relation": "increases",
+      "evidence": "Exposure to ferric Hb (HbFe31) induced a significant expression in HO-1 protein– (15.1761.04-fold) when compared with HbFe21 (9.3260.76-fold)- induced expression (Figure 2C).",
+      "citation": {
+        "type": "PubMed",
+        "name": "American journal of respiratory cell and molecular biology",
+        "reference": "26974230",
+        "title": "Oxidized Ferric and Ferryl Forms of Hemoglobin Trigger Mitochondrial Dysfunction and Injury in Alveolar Type I Cells.",
+        "volume": "55",
+        "pages": "288-98",
+        "date": "2016-08-01",
+        "first": "Chintagari NR",
+        "last": "Alayash AI",
+        "authors": [
+          "Alayash AI",
+          "Chintagari NR",
+          "Jana S"
+        ]
+      },
+      "annotations": {
+        "MeSHAnatomy": {
+          "Alveolar Epithelial Cells": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "source": 2,
+      "target": 14,
+      "key": "502c0cb00f432f5a3d01fe9390bf761b8f17971a625c193d2c73b9f17831c83367e0103622f7661a6e930444725d3d0231a75226199e6775e33c3bb7ee946578"
+    },
+    {
+      "line": 140,
+      "relation": "increases",
+      "evidence": "We found a significant enrichment of HO-1 in the mitochondrial, but not in the cytosolic fractions after exposure to HbFe21 and HbFe31 (Figures 3A and 3B).",
+      "citation": {
+        "type": "PubMed",
+        "name": "American journal of respiratory cell and molecular biology",
+        "reference": "26974230",
+        "title": "Oxidized Ferric and Ferryl Forms of Hemoglobin Trigger Mitochondrial Dysfunction and Injury in Alveolar Type I Cells.",
+        "volume": "55",
+        "pages": "288-98",
+        "date": "2016-08-01",
+        "first": "Chintagari NR",
+        "last": "Alayash AI",
+        "authors": [
+          "Alayash AI",
+          "Chintagari NR",
+          "Jana S"
+        ]
+      },
+      "annotations": {
+        "MeSHAnatomy": {
+          "Mitochondria": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "source": 2,
+      "target": 14,
+      "key": "af66d44a68f21ae722ee304e5d1b393dfb7404904c99ffff491206c3748f29c6a3511f8dd243df63ff64cc762bafdea00016b242ee37628935b84f297d9c3cf2"
+    },
+    {
+      "line": 132,
+      "relation": "increases",
+      "evidence": "Similarly, HbFe31 induced a significant expression H-ferritin protein (60.4062.76-fold) when compared with a 25.25 (61.91)-fold induction by HbFe21 (Figure 2D).",
+      "citation": {
+        "type": "PubMed",
+        "name": "American journal of respiratory cell and molecular biology",
+        "reference": "26974230",
+        "title": "Oxidized Ferric and Ferryl Forms of Hemoglobin Trigger Mitochondrial Dysfunction and Injury in Alveolar Type I Cells.",
+        "volume": "55",
+        "pages": "288-98",
+        "date": "2016-08-01",
+        "first": "Chintagari NR",
+        "last": "Alayash AI",
+        "authors": [
+          "Alayash AI",
+          "Chintagari NR",
+          "Jana S"
+        ]
+      },
+      "annotations": {
+        "MeSHAnatomy": {
+          "Alveolar Epithelial Cells": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "source": 2,
+      "target": 13,
+      "key": "a6853a8e9f1cbc972379ddbf5b25513e3a177509a4a23ec7583c424049b36728656896c4546c89e6c869702442f9095a7fd3a3318555a7d86dd04c9239c99ef1"
+    },
+    {
+      "line": 148,
+      "relation": "causesNoChange",
+      "evidence": "Exposure to HbFe21 and HbFe31 did not alter the expression of cytochrome c oxidase IV protein (Figure 3A).",
+      "citation": {
+        "type": "PubMed",
+        "name": "American journal of respiratory cell and molecular biology",
+        "reference": "26974230",
+        "title": "Oxidized Ferric and Ferryl Forms of Hemoglobin Trigger Mitochondrial Dysfunction and Injury in Alveolar Type I Cells.",
+        "volume": "55",
+        "pages": "288-98",
+        "date": "2016-08-01",
+        "first": "Chintagari NR",
+        "last": "Alayash AI",
+        "authors": [
+          "Alayash AI",
+          "Chintagari NR",
+          "Jana S"
+        ]
+      },
+      "annotations": {
+        "MeSHAnatomy": {
+          "Mitochondria": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "source": 2,
+      "target": 12,
+      "key": "c7f4c950c234af9adbfd224f6e3d8514fd272f5e99228e7969e34b043d840e5e24f94fa7ec900559dbcce55e6867fc30e951144a17a77779f8dfb8a9174ade1a"
+    },
+    {
+      "line": 115,
+      "relation": "decreases",
+      "evidence": "Hp attenuated HbFe21- and HbFe31-induced up-regulation of HO-1 and H-ferritin proteins (Figure 2B).",
+      "citation": {
+        "type": "PubMed",
+        "name": "American journal of respiratory cell and molecular biology",
+        "reference": "26974230",
+        "title": "Oxidized Ferric and Ferryl Forms of Hemoglobin Trigger Mitochondrial Dysfunction and Injury in Alveolar Type I Cells.",
+        "volume": "55",
+        "pages": "288-98",
+        "date": "2016-08-01",
+        "first": "Chintagari NR",
+        "last": "Alayash AI",
+        "authors": [
+          "Alayash AI",
+          "Chintagari NR",
+          "Jana S"
+        ]
+      },
+      "annotations": {
+        "MeSHAnatomy": {
+          "Alveolar Epithelial Cells": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "source": 15,
+      "target": 14,
+      "key": "9f701d186ea1f703324b9c80063968d88642d301fe130e287cc790f3300eb05301f70cd027db428f99ec57bfc354f32d62d9583c7017dbec4380c24078bf3ccd"
+    },
+    {
+      "line": 156,
+      "relation": "decreases",
+      "evidence": "Interestingly, Hp attenuated the HbFe21- and HbFe31-induced HO-1 expression in the mitochondria (Figures 3A and 3B).",
+      "citation": {
+        "type": "PubMed",
+        "name": "American journal of respiratory cell and molecular biology",
+        "reference": "26974230",
+        "title": "Oxidized Ferric and Ferryl Forms of Hemoglobin Trigger Mitochondrial Dysfunction and Injury in Alveolar Type I Cells.",
+        "volume": "55",
+        "pages": "288-98",
+        "date": "2016-08-01",
+        "first": "Chintagari NR",
+        "last": "Alayash AI",
+        "authors": [
+          "Alayash AI",
+          "Chintagari NR",
+          "Jana S"
+        ]
+      },
+      "annotations": {
+        "MeSHAnatomy": {
+          "Mitochondria": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "source": 15,
+      "target": 14,
+      "key": "0c7e11575bbe6f12810f3dc3b38c8c4f5814f7aa02db4db9a5b325f80c1ec0e1fab9a556fc333456362efd25f56fd0acb5912fff4a69d9d795f289b2176a1eba"
+    },
+    {
+      "line": 116,
+      "relation": "decreases",
+      "evidence": "Hp attenuated HbFe21- and HbFe31-induced up-regulation of HO-1 and H-ferritin proteins (Figure 2B).",
+      "citation": {
+        "type": "PubMed",
+        "name": "American journal of respiratory cell and molecular biology",
+        "reference": "26974230",
+        "title": "Oxidized Ferric and Ferryl Forms of Hemoglobin Trigger Mitochondrial Dysfunction and Injury in Alveolar Type I Cells.",
+        "volume": "55",
+        "pages": "288-98",
+        "date": "2016-08-01",
+        "first": "Chintagari NR",
+        "last": "Alayash AI",
+        "authors": [
+          "Alayash AI",
+          "Chintagari NR",
+          "Jana S"
+        ]
+      },
+      "annotations": {
+        "MeSHAnatomy": {
+          "Alveolar Epithelial Cells": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "source": 15,
+      "target": 13,
+      "key": "a3452f642a0754b1240fddf01414c0505cc2b93942e4b9d446705d35ec7ae5645b31115eb92f45adfada0330ed497a76c138002ab9e7b800b91587ed99702ab2"
+    },
+    {
+      "line": 212,
+      "relation": "decreases",
+      "evidence": "A recent study indicated that expression of HO-1 targeted to mitochondria attenuated oxidative stress (43).",
+      "citation": {
+        "type": "PubMed",
+        "name": "American journal of respiratory cell and molecular biology",
+        "reference": "26974230",
+        "title": "Oxidized Ferric and Ferryl Forms of Hemoglobin Trigger Mitochondrial Dysfunction and Injury in Alveolar Type I Cells.",
+        "volume": "55",
+        "pages": "288-98",
+        "date": "2016-08-01",
+        "first": "Chintagari NR",
+        "last": "Alayash AI",
+        "authors": [
+          "Alayash AI",
+          "Chintagari NR",
+          "Jana S"
+        ]
+      },
+      "annotations": {
+        "MeSHAnatomy": {
+          "Mitochondria": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "Cell": {
+          "endothelial cell": true
+        }
+      },
+      "source": 14,
+      "target": 9,
+      "key": "c2a2c9ccada0a6001407a9d6eccf86d9dd29b1e22d9d284d04663a82472a8c8d380a90e008b2e7f35a1cfe2baa2838d6155d503629a176018a50e48880ab635e"
+    },
+    {
+      "line": 221,
+      "relation": "negativeCorrelation",
+      "evidence": "However, hemin or LPS-induced mitochondrial accumulation of HO-1 was associated with decreased mitochondrial heme content and reduced expression of heme-sensitive subunit I of complex IV with loss of activity (33).",
+      "citation": {
+        "type": "PubMed",
+        "name": "American journal of respiratory cell and molecular biology",
+        "reference": "26974230",
+        "title": "Oxidized Ferric and Ferryl Forms of Hemoglobin Trigger Mitochondrial Dysfunction and Injury in Alveolar Type I Cells.",
+        "volume": "55",
+        "pages": "288-98",
+        "date": "2016-08-01",
+        "first": "Chintagari NR",
+        "last": "Alayash AI",
+        "authors": [
+          "Alayash AI",
+          "Chintagari NR",
+          "Jana S"
+        ]
+      },
+      "annotations": {
+        "MeSHAnatomy": {
+          "Mitochondria": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "Cell": {
+          "endothelial cell": true
+        }
+      },
+      "source": 14,
+      "target": 12,
+      "key": "9ddc5257483183bbf89ede9ddd3fb5ab17dc470a700824f9a200a225733314900b8ae5619587b85c2b4ce30b297d9bbdd829c7d24f29bd3f631f5c7f673f2712"
+    },
+    {
+      "line": 232,
+      "relation": "increases",
+      "evidence": "Moreover, mitochondrial translocation of HO-1 can also lead to localized CO production as a result of heme degradation, thus inhibiting electron flow though mitochondrial electron transport chain complex IV (44).",
+      "citation": {
+        "type": "PubMed",
+        "name": "American journal of respiratory cell and molecular biology",
+        "reference": "26974230",
+        "title": "Oxidized Ferric and Ferryl Forms of Hemoglobin Trigger Mitochondrial Dysfunction and Injury in Alveolar Type I Cells.",
+        "volume": "55",
+        "pages": "288-98",
+        "date": "2016-08-01",
+        "first": "Chintagari NR",
+        "last": "Alayash AI",
+        "authors": [
+          "Alayash AI",
+          "Chintagari NR",
+          "Jana S"
+        ]
+      },
+      "annotations": {
+        "MeSHAnatomy": {
+          "Mitochondria": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "Cell": {
+          "endothelial cell": true
+        }
+      },
+      "source": 14,
+      "target": 0,
+      "key": "2fa54b90d0f687263c36c8bc53d3a78f8b61193aa82c69167bf8bf2b877ddc45746573f5730ab5e470471ca780691dc2a080caa011757dc648755029e2c89a41"
+    },
+    {
+      "line": 221,
+      "relation": "negativeCorrelation",
+      "evidence": "However, hemin or LPS-induced mitochondrial accumulation of HO-1 was associated with decreased mitochondrial heme content and reduced expression of heme-sensitive subunit I of complex IV with loss of activity (33).",
+      "citation": {
+        "type": "PubMed",
+        "name": "American journal of respiratory cell and molecular biology",
+        "reference": "26974230",
+        "title": "Oxidized Ferric and Ferryl Forms of Hemoglobin Trigger Mitochondrial Dysfunction and Injury in Alveolar Type I Cells.",
+        "volume": "55",
+        "pages": "288-98",
+        "date": "2016-08-01",
+        "first": "Chintagari NR",
+        "last": "Alayash AI",
+        "authors": [
+          "Alayash AI",
+          "Chintagari NR",
+          "Jana S"
+        ]
+      },
+      "annotations": {
+        "MeSHAnatomy": {
+          "Mitochondria": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "Cell": {
+          "endothelial cell": true
+        }
+      },
+      "source": 12,
+      "target": 14,
+      "key": "42aea12158ced2d3ab3a68502c78c5de95b115e10d84a4b7459fed862fd9845ad0013287f10becb6ac1e170f1304981865f66c993455b69368dcebbb9f573278"
+    },
+    {
+      "line": 168,
+      "relation": "increases",
+      "evidence": "Exposure to HbFe41 caused a significant up-regulation of HO-1 within 12 hours when compared with HbFe21 and HbFe31 (Figures 4A and 4B).",
+      "citation": {
+        "type": "PubMed",
+        "name": "American journal of respiratory cell and molecular biology",
+        "reference": "26974230",
+        "title": "Oxidized Ferric and Ferryl Forms of Hemoglobin Trigger Mitochondrial Dysfunction and Injury in Alveolar Type I Cells.",
+        "volume": "55",
+        "pages": "288-98",
+        "date": "2016-08-01",
+        "first": "Chintagari NR",
+        "last": "Alayash AI",
+        "authors": [
+          "Alayash AI",
+          "Chintagari NR",
+          "Jana S"
+        ]
+      },
+      "annotations": {
+        "MeSHAnatomy": {
+          "Mitochondria": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "source": 6,
+      "target": 14,
+      "key": "227af749c92826233f703cc55aa1b71a27d4335a57573a9ae2d9bd812eded1cea1e8b8beeb9ba117371a4ecd8d873856df28460eef34c334f1e952b7175016e9"
+    },
+    {
+      "line": 176,
+      "relation": "increases",
+      "evidence": "We found significant enrichment of HO-1 in mitochondrial fraction after exposure to HbFe31 and HbFe41 (Figure 4C).",
+      "citation": {
+        "type": "PubMed",
+        "name": "American journal of respiratory cell and molecular biology",
+        "reference": "26974230",
+        "title": "Oxidized Ferric and Ferryl Forms of Hemoglobin Trigger Mitochondrial Dysfunction and Injury in Alveolar Type I Cells.",
+        "volume": "55",
+        "pages": "288-98",
+        "date": "2016-08-01",
+        "first": "Chintagari NR",
+        "last": "Alayash AI",
+        "authors": [
+          "Alayash AI",
+          "Chintagari NR",
+          "Jana S"
+        ]
+      },
+      "annotations": {
+        "MeSHAnatomy": {
+          "Mitochondria": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "source": 6,
+      "target": 14,
+      "key": "ef0c9f20cdcf88af23e174c94c0e271e2be8638a19806690800eaa56a7a2a431f29a247b2616eb737198563b5df70fead4d27275d4768c001f5cf6a2433a4a31"
+    },
+    {
+      "line": 186,
+      "relation": "positiveCorrelation",
+      "evidence": "Exposure to HbFe41 resulted in a drop in hyperpolarized cell percentage over untreated control, thus indicating a significant mitochondrial depolarization or compromised mitochondrial respiration.",
+      "citation": {
+        "type": "PubMed",
+        "name": "American journal of respiratory cell and molecular biology",
+        "reference": "26974230",
+        "title": "Oxidized Ferric and Ferryl Forms of Hemoglobin Trigger Mitochondrial Dysfunction and Injury in Alveolar Type I Cells.",
+        "volume": "55",
+        "pages": "288-98",
+        "date": "2016-08-01",
+        "first": "Chintagari NR",
+        "last": "Alayash AI",
+        "authors": [
+          "Alayash AI",
+          "Chintagari NR",
+          "Jana S"
+        ]
+      },
+      "annotations": {
+        "MeSHAnatomy": {
+          "Mitochondria": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "source": 6,
+      "target": 8,
+      "key": "f569ced57a04e0d28bafe070779902ffef3ff8a3a85a03f81de6cf756002dd9cd807786351bf0f3d9005911161cd7b5887803d7a72710564a0f333d816d854bf"
+    },
+    {
+      "line": 187,
+      "relation": "negativeCorrelation",
+      "evidence": "Exposure to HbFe41 resulted in a drop in hyperpolarized cell percentage over untreated control, thus indicating a significant mitochondrial depolarization or compromised mitochondrial respiration.",
+      "citation": {
+        "type": "PubMed",
+        "name": "American journal of respiratory cell and molecular biology",
+        "reference": "26974230",
+        "title": "Oxidized Ferric and Ferryl Forms of Hemoglobin Trigger Mitochondrial Dysfunction and Injury in Alveolar Type I Cells.",
+        "volume": "55",
+        "pages": "288-98",
+        "date": "2016-08-01",
+        "first": "Chintagari NR",
+        "last": "Alayash AI",
+        "authors": [
+          "Alayash AI",
+          "Chintagari NR",
+          "Jana S"
+        ]
+      },
+      "annotations": {
+        "MeSHAnatomy": {
+          "Mitochondria": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "source": 6,
+      "target": 7,
+      "key": "3a88f7768bb50e49f975b27ce7ec259b9e144e67b21f569c87ef79d40900d5f18d31df4f5b1ff484a850ee6d4add033ee70066af059ef7b929020566f1ea431e"
+    },
+    {
+      "line": 204,
+      "relation": "positiveCorrelation",
+      "evidence": "For example, HbFe41 (20 mM), but not HbFe31 or HbFe21, induced cytoskeletal reorganization, inflammation and disrupted barrier integrity in endothelial cells after 8 hours of incubation with the proteins.",
+      "citation": {
+        "type": "PubMed",
+        "name": "American journal of respiratory cell and molecular biology",
+        "reference": "26974230",
+        "title": "Oxidized Ferric and Ferryl Forms of Hemoglobin Trigger Mitochondrial Dysfunction and Injury in Alveolar Type I Cells.",
+        "volume": "55",
+        "pages": "288-98",
+        "date": "2016-08-01",
+        "first": "Chintagari NR",
+        "last": "Alayash AI",
+        "authors": [
+          "Alayash AI",
+          "Chintagari NR",
+          "Jana S"
+        ]
+      },
+      "annotations": {
+        "MeSHAnatomy": {
+          "Mitochondria": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "Cell": {
+          "endothelial cell": true
+        }
+      },
+      "source": 6,
+      "target": 4,
+      "key": "6ad783e2925f683b5354c3f9ff0cbf072cd1db429247e5a6d5ff4cb6a1c648156b35a40e21cafdd31ed4ffa805c68efe049594542f568f487a30adc56f5cd89f"
+    },
+    {
+      "line": 205,
+      "relation": "positiveCorrelation",
+      "evidence": "For example, HbFe41 (20 mM), but not HbFe31 or HbFe21, induced cytoskeletal reorganization, inflammation and disrupted barrier integrity in endothelial cells after 8 hours of incubation with the proteins.",
+      "citation": {
+        "type": "PubMed",
+        "name": "American journal of respiratory cell and molecular biology",
+        "reference": "26974230",
+        "title": "Oxidized Ferric and Ferryl Forms of Hemoglobin Trigger Mitochondrial Dysfunction and Injury in Alveolar Type I Cells.",
+        "volume": "55",
+        "pages": "288-98",
+        "date": "2016-08-01",
+        "first": "Chintagari NR",
+        "last": "Alayash AI",
+        "authors": [
+          "Alayash AI",
+          "Chintagari NR",
+          "Jana S"
+        ]
+      },
+      "annotations": {
+        "MeSHAnatomy": {
+          "Mitochondria": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "Cell": {
+          "endothelial cell": true
+        }
+      },
+      "source": 6,
+      "target": 19,
+      "key": "ceb46fec05a5ae2cfb688c98abf8ef300daed3ed52e0699f65af3859aba5e898a51026ce4eea3a683f4f74e0134b8b003ae3c122dbc2e0264d0f08d35d01bc8c"
+    },
+    {
+      "line": 186,
+      "relation": "positiveCorrelation",
+      "evidence": "Exposure to HbFe41 resulted in a drop in hyperpolarized cell percentage over untreated control, thus indicating a significant mitochondrial depolarization or compromised mitochondrial respiration.",
+      "citation": {
+        "type": "PubMed",
+        "name": "American journal of respiratory cell and molecular biology",
+        "reference": "26974230",
+        "title": "Oxidized Ferric and Ferryl Forms of Hemoglobin Trigger Mitochondrial Dysfunction and Injury in Alveolar Type I Cells.",
+        "volume": "55",
+        "pages": "288-98",
+        "date": "2016-08-01",
+        "first": "Chintagari NR",
+        "last": "Alayash AI",
+        "authors": [
+          "Alayash AI",
+          "Chintagari NR",
+          "Jana S"
+        ]
+      },
+      "annotations": {
+        "MeSHAnatomy": {
+          "Mitochondria": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "source": 8,
+      "target": 6,
+      "key": "941d48f71aaa9412b00525c3515c0c86ed4a07a739a878c1bb00134d9723144114249ad134fc48fbfd36431158cd14a21868344bf4c5e7d7907c8c50f1488392"
+    },
+    {
+      "line": 187,
+      "relation": "negativeCorrelation",
+      "evidence": "Exposure to HbFe41 resulted in a drop in hyperpolarized cell percentage over untreated control, thus indicating a significant mitochondrial depolarization or compromised mitochondrial respiration.",
+      "citation": {
+        "type": "PubMed",
+        "name": "American journal of respiratory cell and molecular biology",
+        "reference": "26974230",
+        "title": "Oxidized Ferric and Ferryl Forms of Hemoglobin Trigger Mitochondrial Dysfunction and Injury in Alveolar Type I Cells.",
+        "volume": "55",
+        "pages": "288-98",
+        "date": "2016-08-01",
+        "first": "Chintagari NR",
+        "last": "Alayash AI",
+        "authors": [
+          "Alayash AI",
+          "Chintagari NR",
+          "Jana S"
+        ]
+      },
+      "annotations": {
+        "MeSHAnatomy": {
+          "Mitochondria": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "source": 7,
+      "target": 6,
+      "key": "e71944b69fd55004460ba572459f94268ecc11cd2704adc272bcdf3e7865d842f6bc4e9bd7dba4352c1439deac3399df8cca76c412efb2da0e0c04a33fb9b2b9"
+    },
+    {
+      "line": 193,
+      "relation": "decreases",
+      "evidence": "We found that Hpx effectively attenuated HO-1 induction by all redox forms of Hb.",
+      "citation": {
+        "type": "PubMed",
+        "name": "American journal of respiratory cell and molecular biology",
+        "reference": "26974230",
+        "title": "Oxidized Ferric and Ferryl Forms of Hemoglobin Trigger Mitochondrial Dysfunction and Injury in Alveolar Type I Cells.",
+        "volume": "55",
+        "pages": "288-98",
+        "date": "2016-08-01",
+        "first": "Chintagari NR",
+        "last": "Alayash AI",
+        "authors": [
+          "Alayash AI",
+          "Chintagari NR",
+          "Jana S"
+        ]
+      },
+      "annotations": {
+        "MeSHAnatomy": {
+          "Mitochondria": true
+        },
+        "TextLocation": {
+          "Results": true
+        }
+      },
+      "source": 16,
+      "target": 14,
+      "key": "de77cc6da97c00021ea260aecc74e10b3f94aad3f6101de775d1da52fd5a18fefa866f3d285c2eee02d5528d5c09c401299e8ad3c914e384746f73d7e1732190"
+    },
+    {
+      "line": 204,
+      "relation": "positiveCorrelation",
+      "evidence": "For example, HbFe41 (20 mM), but not HbFe31 or HbFe21, induced cytoskeletal reorganization, inflammation and disrupted barrier integrity in endothelial cells after 8 hours of incubation with the proteins.",
+      "citation": {
+        "type": "PubMed",
+        "name": "American journal of respiratory cell and molecular biology",
+        "reference": "26974230",
+        "title": "Oxidized Ferric and Ferryl Forms of Hemoglobin Trigger Mitochondrial Dysfunction and Injury in Alveolar Type I Cells.",
+        "volume": "55",
+        "pages": "288-98",
+        "date": "2016-08-01",
+        "first": "Chintagari NR",
+        "last": "Alayash AI",
+        "authors": [
+          "Alayash AI",
+          "Chintagari NR",
+          "Jana S"
+        ]
+      },
+      "annotations": {
+        "MeSHAnatomy": {
+          "Mitochondria": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "Cell": {
+          "endothelial cell": true
+        }
+      },
+      "source": 4,
+      "target": 6,
+      "key": "ceea2255b57cf7e9637115f4c1b8c10bb49e4d1c9d58a127edf13368ef79d1f05acfc2dbc7c0842a8eeb025f86c49aa3de5554f97fff6ab3530af84091dac307"
+    },
+    {
+      "line": 205,
+      "relation": "positiveCorrelation",
+      "evidence": "For example, HbFe41 (20 mM), but not HbFe31 or HbFe21, induced cytoskeletal reorganization, inflammation and disrupted barrier integrity in endothelial cells after 8 hours of incubation with the proteins.",
+      "citation": {
+        "type": "PubMed",
+        "name": "American journal of respiratory cell and molecular biology",
+        "reference": "26974230",
+        "title": "Oxidized Ferric and Ferryl Forms of Hemoglobin Trigger Mitochondrial Dysfunction and Injury in Alveolar Type I Cells.",
+        "volume": "55",
+        "pages": "288-98",
+        "date": "2016-08-01",
+        "first": "Chintagari NR",
+        "last": "Alayash AI",
+        "authors": [
+          "Alayash AI",
+          "Chintagari NR",
+          "Jana S"
+        ]
+      },
+      "annotations": {
+        "MeSHAnatomy": {
+          "Mitochondria": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "Cell": {
+          "endothelial cell": true
+        }
+      },
+      "source": 19,
+      "target": 6,
+      "key": "39bc467429298a00dbbbff834cb837e006ab2d5df6e1e0d6027a4891bce06c824aa6af17328428cf7a9e9283c2cac749a381b785fc5786753f61398ccc6db8f8"
+    },
+    {
+      "line": 233,
+      "relation": "decreases",
+      "evidence": "Moreover, mitochondrial translocation of HO-1 can also lead to localized CO production as a result of heme degradation, thus inhibiting electron flow though mitochondrial electron transport chain complex IV (44).",
+      "citation": {
+        "type": "PubMed",
+        "name": "American journal of respiratory cell and molecular biology",
+        "reference": "26974230",
+        "title": "Oxidized Ferric and Ferryl Forms of Hemoglobin Trigger Mitochondrial Dysfunction and Injury in Alveolar Type I Cells.",
+        "volume": "55",
+        "pages": "288-98",
+        "date": "2016-08-01",
+        "first": "Chintagari NR",
+        "last": "Alayash AI",
+        "authors": [
+          "Alayash AI",
+          "Chintagari NR",
+          "Jana S"
+        ]
+      },
+      "annotations": {
+        "MeSHAnatomy": {
+          "Mitochondria": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "Cell": {
+          "endothelial cell": true
+        }
+      },
+      "source": 0,
+      "target": 10,
+      "key": "a9e2dc8a3f632f52e630008e2d3c8fcf12bcccfd0bb7362e52d55090c822ee727bada1ed9cc983c1233ac6ab3d57436c286e77df678a6bb3b5f6fcf6b8922e25"
+    },
+    {
+      "relation": "hasComponent",
+      "source": 10,
+      "target": 3,
+      "key": "186cf8bd0989838abffb82419377b5d38baaf423308432682795315751b5b2b825407d70402474518786d8d5dec0ab69d11a499014f22935e4fbd296dd75c0bb"
+    },
+    {
+      "line": 242,
+      "relation": "increases",
+      "evidence": "Exposure to Hb and its oxidized products increases heme overload on the AT1 cells. Heme overload induces the expression of HO-1 and iron-sequestering proteins, such as ferritin.",
+      "citation": {
+        "type": "PubMed",
+        "name": "American journal of respiratory cell and molecular biology",
+        "reference": "26974230",
+        "title": "Oxidized Ferric and Ferryl Forms of Hemoglobin Trigger Mitochondrial Dysfunction and Injury in Alveolar Type I Cells.",
+        "volume": "55",
+        "pages": "288-98",
+        "date": "2016-08-01",
+        "first": "Chintagari NR",
+        "last": "Alayash AI",
+        "authors": [
+          "Alayash AI",
+          "Chintagari NR",
+          "Jana S"
+        ]
+      },
+      "annotations": {
+        "MeSHAnatomy": {
+          "Mitochondria": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "Cell": {
+          "endothelial cell": true
+        }
+      },
+      "source": 1,
+      "target": 14,
+      "key": "686cd87c8cacffcf44d971fae9a6372152a8eff2a71e6bc098f20dceaedc97835f9acaf88b0381295ef010fe66e112e38668fee84b501ec3af36fb15322dd139"
+    },
+    {
+      "line": 243,
+      "relation": "increases",
+      "evidence": "Exposure to Hb and its oxidized products increases heme overload on the AT1 cells. Heme overload induces the expression of HO-1 and iron-sequestering proteins, such as ferritin.",
+      "citation": {
+        "type": "PubMed",
+        "name": "American journal of respiratory cell and molecular biology",
+        "reference": "26974230",
+        "title": "Oxidized Ferric and Ferryl Forms of Hemoglobin Trigger Mitochondrial Dysfunction and Injury in Alveolar Type I Cells.",
+        "volume": "55",
+        "pages": "288-98",
+        "date": "2016-08-01",
+        "first": "Chintagari NR",
+        "last": "Alayash AI",
+        "authors": [
+          "Alayash AI",
+          "Chintagari NR",
+          "Jana S"
+        ]
+      },
+      "annotations": {
+        "MeSHAnatomy": {
+          "Mitochondria": true
+        },
+        "TextLocation": {
+          "Discussion": true
+        },
+        "Cell": {
+          "endothelial cell": true
+        }
+      },
+      "source": 1,
+      "target": 13,
+      "key": "16a042873e24d26c7bd8e785d1d76ff21c357229edf047b0f8329b0ccd7b570f4d3505c84b1331f5105653d9834ec7d9ea7d5ffe7afd83c8b204d1dece0f52d8"
+    }
+  ]
+}
